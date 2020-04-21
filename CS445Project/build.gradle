@@ -3,6 +3,7 @@ plugins {
     id 'java-library'
     id 'jacoco'
     id 'war'
+	id 'com.bmuschko.tomcat' version '2.5'
 }
 
 java {
@@ -14,6 +15,7 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -35,6 +37,17 @@ dependencies {
     // GSON
     implementation 'com.google.code.gson:gson:2.8.6'
     
+    //Tomcat
+    def tomcatVersion = '9.0.31'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-logging-juli:9.0.0.M6",
+           "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+    
+}
+
+tomcat {
+    httpProtocol = 'org.apache.coyote.http11.Http11Nio2Protocol'
+    ajpProtocol  = 'org.apache.coyote.ajp.AjpNio2Protocol'
 }
 
 test {
