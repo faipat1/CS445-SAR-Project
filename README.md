@@ -2,6 +2,6 @@
 
 ## Project Setup
 
-### 0. Objective
+  ### 0. Objective
 Setup the final project for CS445 IIT Spring 2020, Share A Ride:
 
