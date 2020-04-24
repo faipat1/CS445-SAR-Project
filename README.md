@@ -69,8 +69,7 @@ Download the source code by either downloading the zip file **or** by checking o
 Download the zip file into your downloads folder.
 ```
 $ cd ~/Downloads
-$ gunzip CS445Project.tar.gz
-$ tar xvf CS445Project.tar
+$ unzip CS445Project.zip
 $ mv CS445Project <path_to_your_eclipse_workspace>
 ```
 
