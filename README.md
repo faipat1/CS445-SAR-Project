@@ -84,7 +84,6 @@ Build the project
 $ cd CS445Project
 $ ./gradlew CS445Project
 ```
-The .war file will be generated in /build/libs
 Now import the project into your eclipse workspace
 - Start eclipse
 - Go to "File > Import" and select "General > Existing Projects into Workspace"
