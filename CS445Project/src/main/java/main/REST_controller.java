@@ -287,11 +287,11 @@ public class REST_controller {
 		jobj.getAsJsonObject("location_info").remove("count");
 		jobj.remove("joinRequests");
 		jobj.remove("messages");
-		Double app = jobj.get("amount_per_passenger").getAsDouble();
-		if(app == 0) {
-			jobj.remove("amount_per_passenger");
-			jobj.add("amount_per_passenger", null);
-		}
+//		Double app = jobj.get("amount_per_passenger").getAsDouble();
+//		if(app == 0) {
+//			jobj.remove("amount_per_passenger");
+//			jobj.add("amount_per_passenger", null);
+//		}
 		s = gson.toJson(jobj);
 		return Response.status(Response.Status.OK).entity(s).build();
 	}

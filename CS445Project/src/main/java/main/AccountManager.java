@@ -120,8 +120,14 @@ public class AccountManager {
 	
 	public Account viewDriverRatings(int aid) {
 		Account a = getAccount(aid);
+		List<Ride> rideList = RideManager.getRidesList();
+		int rides = 0;
 		List<Rating> ratingsList = a.getDriverRatings();
-		int rides = ratingsList.size();
+		for(int i = 0; i < rideList.size(); i++) {
+			if(rideList.get(i).getAid() == aid) {
+				rides++;
+			}
+		}
 		int ratings = ratingsList.size();
 		Double avg = null;
 		if(ratings > 0) {
