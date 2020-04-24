@@ -23,7 +23,8 @@ $ java -version
 ```
 
 ### 3. Install and Configure Eclipse
-Download the eclipse installer from [the Eclipse website](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-03/R/eclipse-inst-linux64.tar.gz)
+Download the eclipse installer from [the Eclipse website](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-03/R/eclipse-inst-linux64.tar.gz).
+
 Uncompress and unarchive the installer
 ```
 $ gunzip eclipse-inst-linux64.tar.gz
