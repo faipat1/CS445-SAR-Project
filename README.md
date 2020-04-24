@@ -117,7 +117,9 @@ The report will be generated in ~/eclipse-workspace/specialCup/build/reports/jac
 
 
 ## *Copyright and Licensing*
+Copyright (c) 2020 [Faisal Patel]
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sublicense copies of the Software, and to permit persons to whom the Software is furnished to do so.
 
 
 ## *Known Bugs*
@@ -125,4 +127,5 @@ The report will be generated in ~/eclipse-workspace/specialCup/build/reports/jac
 
 
 ## *Credits and Acknowledgements*
-
+I would like to acknowledge Professor Bistriceanu for his direction and constant reminders on the scale of this project.
+I would like to acknowledge the TA Ritvij Saxena for his help in testing the project and timely responses.
