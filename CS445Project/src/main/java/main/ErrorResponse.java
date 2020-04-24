@@ -15,13 +15,5 @@ public class ErrorResponse {
 		this.status = 400;
 		this.instance = instance;
 	}
-	
-	public ErrorResponse(String type, String title, String detail, int status, String instance) {
-		this.type = type;
-		this.title = title;
-		this.detail = detail;
-		this.status = status;
-		this.instance = instance;
-	}
 
 }

@@ -39,5 +39,38 @@ class ReportTests {
 		Report report = reportManager.getReport(907, "", "");
 		assertTrue(report.getPid() == 907);
 	}
+	
+	@Test
+	void test_get_report_from() {
+		ReportManager reportManager = new ReportManager();
+		RideManager manager = new RideManager();
+		Account a = new Account("John", "Smith", "312-000-0000", "google.com", true);
+		LocationInfo li = new LocationInfo("Chicago" , "60061", "Skokie", "60067");
+		DateTime dt = new DateTime("14-Apr-2020", "09:00");
+		Car car = new Car("Audi", "A4", "Gray", "IL", "COVID19");
+		int mp = 2;
+		double app = 15.0;
+		String conditions = "no smoking";
+		Ride r = manager.createRide(a.getAid(), li, dt, car, mp, app, conditions);
+		Report report = reportManager.getReport(907, "14-Apr-2020", "");
+		assertTrue(report.getPid() == 907);
+	}
+	
+	@Test
+	void test_get_report_from_and_to() {
+		ReportManager reportManager = new ReportManager();
+		RideManager manager = new RideManager();
+		Account a = new Account("John", "Smith", "312-000-0000", "google.com", true);
+		LocationInfo li = new LocationInfo("Chicago" , "60061", "Skokie", "60067");
+		DateTime dt = new DateTime("14-Apr-2020", "09:00");
+		Car car = new Car("Audi", "A4", "Gray", "IL", "COVID19");
+		int mp = 2;
+		double app = 15.0;
+		String conditions = "no smoking";
+		Ride r = manager.createRide(a.getAid(), li, dt, car, mp, app, conditions);
+		Report report = reportManager.getReport(911, "14-Apr-2020", "30-Apr-2020");
+		String name = report.getName();
+		assertTrue(report.getPid() == 911);
+	}
 
 }

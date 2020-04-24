@@ -107,6 +107,12 @@ class AccountTests {
 	}
 	
 	@Test
+	void test_rating() {
+		Rating r = new Rating(5, "good");
+		assertTrue(r.getRating() > 0);
+	}
+	
+	@Test
 	void test_driver_rating() {
 		AccountManager manager = new AccountManager();
 		Account a = manager.createAccount("Bob", "Doe", "312-456-7890", "google.com", false);
@@ -144,6 +150,7 @@ class AccountTests {
 		double app = 15.0;
 		String conditions = "no smoking";
 		Ride r = manager.createRide(a.getAid(), li, dt, car, mp, app, conditions);
+		int rid = r.getRid();
 		Rating ra = accmanager.rateAccount(a.getAid(), r.getRid(), b.getAid(), 5, "good");
 		assertTrue(ra == null);
 	}
@@ -164,6 +171,7 @@ class AccountTests {
 		Rating ra = accmanager.rateAccount(b.getAid(), r.getRid(), a.getAid(), 5, "good");
 		assertTrue(ra.getSid() > 0);
 	}
+	
 	
 
 }
