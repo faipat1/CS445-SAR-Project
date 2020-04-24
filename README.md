@@ -81,7 +81,7 @@ $ mv CS445Project <path_to_your_eclipse_workspace>
 
 Build the project
 ```
-$ cd CS445Project
+$ cd <path_to_your_eclipse_workspace>/CS445Project
 $ ./gradlew CS445Project
 ```
 Now import the project into your eclipse workspace
