@@ -29,18 +29,18 @@ Uncompress and unarchive the installer
 $ gunzip eclipse-inst-linux64.tar.gz
 $ tar xvf eclipse-inst-linux64.tar
 ```
--Navigate to ~/Downloads/eclipse-installer and then double click on the installer (eclipse-inst) to run it. Select "Eclipse IDE for Java Developers" and complete the installation.
--Launch Eclipse
--Go to "Help > Install New Software"
--Select “Work with: 2020-03 - http://download.eclipse.org/releases/2020-03”
--Expand the “Web, XML, Java EE Development and OSGi Enterprise Development” menu item and then select the following:
-  -Eclipse Java EE Developer Tools
-  -Eclipse Java Web Developer Tools
-  -Eclipse Web Developer Tools
-  -JST Server Adapters
-  -JST Server Adapters Extensions
--Click "Next"
--Accept the licensing terms and “Finish”. Allow some time for installation to complete.
+- Navigate to ~/Downloads/eclipse-installer and then double click on the installer (eclipse-inst) to run it. Select "Eclipse IDE for Java Developers" and complete the installation.
+- Launch Eclipse
+- Go to "Help > Install New Software"
+- Select “Work with: 2020-03 - http://download.eclipse.org/releases/2020-03”
+- Expand the “Web, XML, Java EE Development and OSGi Enterprise Development” menu item and then select the following:
+  - Eclipse Java EE Developer Tools
+  - Eclipse Java Web Developer Tools
+  - Eclipse Web Developer Tools
+  - JST Server Adapters
+  - JST Server Adapters Extensions
+- Click "Next"
+- Accept the licensing terms and “Finish”. Allow some time for installation to complete.
 
 ### Install Tomcat 8
 ```
