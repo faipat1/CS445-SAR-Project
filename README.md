@@ -76,7 +76,7 @@ $ mv CS445Project <path_to_your_eclipse_workspace>
 **To checkout from repository:**
 ```
 $ git clone https://github.com/faipat1/CS445-SAR-Project
-$ mv CS445Project <path_to_your_eclipse_workspace>
+$ mv CS445-SAR-Project/CS445Project <path_to_your_eclipse_workspace>
 ```
 
 Build the project
