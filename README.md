@@ -11,7 +11,7 @@ The code can be downloaded from the zip file, or from the [repository](https://g
 See specific setup instructions below
 
 ### 1. Pre-requisite
-This setup contains instructions for Ubuntu 18.04. The same instructions can be followed on other operating systems but specific commands will have to be alterered.
+This setup contains instructions for Ubuntu 18.04. The same instructions can be followed on other operating systems but specific commands will have to be altered.
 
 ### 2. Install Java 8
 ```
