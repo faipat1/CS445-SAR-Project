@@ -4,6 +4,7 @@
 
 ### 0. Objective
 Setup the final project for CS445 IIT Spring 2020, Share A Ride:
+
 [RESTful API Definition](http://cs.iit.edu/~virgil/cs445/mail.spring2020/project/project-api.html)
 
 The code can be downloaded from the zip file, or from the [repository](https://github.com/faipat1/CS445-SAR-Project).
