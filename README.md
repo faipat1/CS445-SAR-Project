@@ -22,7 +22,7 @@ Verify java version
 $ java -version
 ```
 
-### Install and Configure Eclipse
+### 3. Install and Configure Eclipse
 Download the eclipse installer from [the Eclipse website](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-03/R/eclipse-inst-linux64.tar.gz)
 Uncompress and unarchive the installer
 ```
@@ -42,7 +42,7 @@ $ tar xvf eclipse-inst-linux64.tar
 - Click "Next"
 - Accept the licensing terms and “Finish”. Allow some time for installation to complete.
 
-### Install Tomcat 8
+### 4. Install Tomcat 8
 ```
 $ cd ~/Downloads
 $ wget http://apache.mirrors.hoobly.com/tomcat/tomcat-8/v8.5.53/bin/apache-tomcat-8.5.53.tar.gz
@@ -61,4 +61,38 @@ Shutdown the server
 $ ./shutdown.sh
 ```
 
-### Import Project into Eclipse Workspace
+### 5. Import Project into Eclipse Workspace
+Download the source code by either downloading the zip file **or** by checking out from the repository.
+
+**To get from the zip file:**
+Download the zip file into your downloads folder.
+```
+$ cd ~/Downloads
+$ gunzip CS445Project.tar.gz
+$ tar xvf CS445Project.tar
+$ mv CS445Project <path_to_your_eclipse_workspace>
+```
+
+**To checkout from repository:**
+```
+$ git clone https://github.com/faipat1/CS445-SAR-Project
+$ mv CS445Project <path_to_your_eclipse_workspace>
+```
+
+Build the project
+```
+$ cd CS445Project
+$ ./gradlew CS445Project
+```
+The .war file will be generated in /build/libs
+Now import the project into your eclipse workspace
+- Start eclipse
+- Go to "File > Import" and select "General > Existing Projects into Workspace"
+- Select the CS445Project.
+
+### 6. Setup a Runtime Environment in Eclipse
+
+
+
+
+
