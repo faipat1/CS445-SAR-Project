@@ -123,7 +123,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 
 ## *Known Bugs*
-
+System notifications to driver and rider regarding a ride are not implemented. Data validation is not significant, things like pictures for accounts may be invalid.
 
 
 ## *Credits and Acknowledgements*
