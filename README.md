@@ -108,6 +108,12 @@ To configure the REST Services to be accessible at http://localhost:8080/sar ins
 ### 8. Run the project
 If everything was setup properly, you can now right click on the project and select "Run > Run on Server". The REST Services will be accessible at http://localhost:8080/sar
 
+If you wish to generate a unit test report, in the project folder run
+```
+$ ./gradlew jacocoTestReport
+```
+
+The report will be generated in ~/eclipse-workspace/specialCup/build/reports/jacoco/test/index.html 
 
 
 ## *Copyright and Licensing*
