@@ -123,9 +123,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 
 ## *Known Bugs*
-System notifications to driver and rider regarding a ride are not implemented. Data validation is not significant, things like pictures for accounts may be invalid.
+- System notifications to driver and rider regarding a ride are not implemented. 
+- Data validation is not significant, things like pictures for accounts may be invalid.
+- Total number of rides for rider ratings may not be accurate.
 
 
 ## *Credits and Acknowledgements*
-I would like to acknowledge Professor Bistriceanu for his direction and constant reminders on the scale of this project.
-I would like to acknowledge the TA Ritvij Saxena for his help in testing the project and timely responses.
+- I would like to acknowledge Professor Bistriceanu for his direction and constant reminders on the scale of this project.
+- I would like to acknowledge the TA Ritvij Saxena for his help in testing the project and timely responses.
