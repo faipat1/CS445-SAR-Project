@@ -3,7 +3,7 @@
 ## *Project Setup*
 
 ### 0. Objective
-Setup the final project for CS445 IIT Spring 2020, Share A Ride:
+Run the final project for CS445 IIT Spring 2020, Share A Ride:
 
 [RESTful API Definition](http://cs.iit.edu/~virgil/cs445/mail.spring2020/project/project-api.html)
 
@@ -90,6 +90,23 @@ Now import the project into your eclipse workspace
 - Select the CS445Project.
 
 ### 6. Setup a Runtime Environment in Eclipse
+- Go to "Window > Preferences"  and find "Runtime Environments".
+- Click on "Add" to create a new Runtime, then select "Apache > Apache Tomcat v8.5". Click on "Next".
+- Type /opt/tomcat in the "Tomcat installation path" text box. Click "Finish".
+- Click "Apply and Close".
+- Right click on the project name and select "Properties" then select "Targeted Runtimes". Check the box for "Apache Tomcat v8.5" then "Apply and Close".
+
+
+### 7. Create a Server Where the Code Will be Deployed
+- Go to "Window > Show View > Other" expand "Server" and click on "Servers"; this will open a new tab named "Servers" to your workbench. Right click in that window and select "New > Server". Select "Apache Tomcat" and then press the "New" icon.
+- Keep the host name as "localhost", select the "Apache Tomcat v8.5 Server" as the type, name the server whatever you like, and make sure the Server runtime you installed is selected in the drop down list. Click "Next", select CS445Project and "Add" it to the Configured pane.
+- Click "Finish" and there should now be a server entry with the name you specified in the "Servers" window.
+To configure the REST Services to be accessible at http://localhost:8080/sar instead of http://localhost:8080/CS445Project/sar:
+- Expand the server you created: you should see a number of files associated with the server, such as catalina.policy, catalina.properties, etc.
+- Right click on server.xml and open it with a text editor. Scroll down to the line that begins with "<Context" and edit the value of path from "/CS445Project" to "/". Save the file.
+
+### 8. Run the project
+If everything was setup properly, you can now right click on the project and select "Run > Run on Server". The REST Services will be accessible at http://localhost:8080/sar
 
 
 
