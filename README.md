@@ -110,5 +110,13 @@ If everything was setup properly, you can now right click on the project and sel
 
 
 
+## *Copyright and Licensing*
 
+
+
+## *Known Bugs*
+
+
+
+## *Credits and Acknowledgements*
 
