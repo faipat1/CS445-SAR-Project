@@ -62,7 +62,37 @@ Shutdown the server
 $ ./shutdown.sh
 ```
 
-### 5. Import Project into Eclipse Workspace
+### 5. Build and Deploy
+Download the source code by either downloading the zip file **or** by checking out from the repository.
+
+**To get from the zip file:**
+Download the zip file into your downloads folder.
+```
+$ cd ~/Downloads
+$ unzip CS445Project.zip
+```
+
+**To checkout from repository:**
+```
+$ git clone https://github.com/faipat1/CS445-SAR-Project
+```
+
+Build the project.
+```
+$ cd CS445Project
+$ ./gradlew CS445Project
+```
+Deploy the project to the server and start the server.
+```
+$ cp build/libs/CS445Project.war /opt/tomcat/webapps
+$ cd /opt/tomcat/bin
+$ ./startup.sh
+```
+The REST services should be running and accessible at http://localhost:8080/CS445Project/sar.
+
+If you wish to build and deploy with eclipse instead, further instructions are below.
+
+### 6. Import Project into Eclipse Workspace
 Download the source code by either downloading the zip file **or** by checking out from the repository.
 
 **To get from the zip file:**
@@ -89,7 +119,7 @@ Now import the project into your eclipse workspace
 - Go to "File > Import" and select "General > Existing Projects into Workspace"
 - Select the CS445Project.
 
-### 6. Setup a Runtime Environment in Eclipse
+### 7. Setup a Runtime Environment in Eclipse
 - Go to "Window > Preferences"  and find "Runtime Environments".
 - Click on "Add" to create a new Runtime, then select "Apache > Apache Tomcat v8.5". Click on "Next".
 - Type /opt/tomcat in the "Tomcat installation path" text box. Click "Finish".
@@ -97,7 +127,7 @@ Now import the project into your eclipse workspace
 - Right click on the project name and select "Properties" then select "Targeted Runtimes". Check the box for "Apache Tomcat v8.5" then "Apply and Close".
 
 
-### 7. Create a Server Where the Code Will be Deployed
+### 8. Create a Server Where the Code Will be Deployed
 - Go to "Window > Show View > Other" expand "Server" and click on "Servers"; this will open a new tab named "Servers" to your workbench. Right click in that window and select "New > Server". Select "Apache Tomcat" and then press the "New" icon.
 - Keep the host name as "localhost", select the "Apache Tomcat v8.5 Server" as the type, name the server whatever you like, and make sure the Server runtime you installed is selected in the drop down list. Click "Next", select CS445Project and "Add" it to the Configured pane.
 - Click "Finish" and there should now be a server entry with the name you specified in the "Servers" window.
@@ -106,7 +136,7 @@ To configure the REST Services to be accessible at http://localhost:8080/sar ins
 - Expand the server you created: you should see a number of files associated with the server, such as catalina.policy, catalina.properties, etc.
 - Right click on server.xml and open it with a text editor. Scroll down to the line that begins with "<Context" and edit the value of path from "/CS445Project" to "/". Save the file.
 
-### 8. Run the project
+### 9. Run the project
 If everything was setup properly, you can now right click on the project and select "Run > Run on Server". The REST Services will be accessible at http://localhost:8080/sar
 
 If you wish to generate a unit test report or see test coverage you can right click on the project and select "Coverage as > JUnit Test". Alternatively in the project folder run
