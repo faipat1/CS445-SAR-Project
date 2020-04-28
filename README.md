@@ -61,13 +61,16 @@ Build the project.
 $ cd CS445Project
 $ ./gradlew build
 ```
-Deploy the project to the server and start the server.
+Deploy the project to the server as root and start the server.
 ```
 $ cp build/libs/CS445Project.war /opt/tomcat/webapps
+$ cd /opt/tomcat/webapps
+$ rm -rf ROOT
+$ mv CS445Project.war ROOT.war
 $ cd /opt/tomcat/bin
 $ ./startup.sh
 ```
-The REST services should be running and accessible at http://localhost:8080/CS445Project/sar.
+The REST services should be running and accessible at http://localhost:8080/sar.
 
 If you wish to build and deploy with eclipse instead, further instructions are below.
 
