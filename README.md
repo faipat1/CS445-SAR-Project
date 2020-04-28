@@ -59,7 +59,7 @@ $ git clone https://github.com/faipat1/CS445-SAR-Project
 Build the project.
 ```
 $ cd CS445Project
-$ ./gradlew CS445Project
+$ ./gradlew build
 ```
 Deploy the project to the server and start the server.
 ```
